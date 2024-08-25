@@ -4,6 +4,9 @@ on:
   schedule:
     # Runs every day at 8:00 AM Beijing Time (UTC+8)
     - cron: '0 0 * * *'
+  
+  # Add this section to enable manual triggering
+  workflow_dispatch:
 
 jobs:
   run-ssh-command:
